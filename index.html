@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Assets/styles/css/style.css">
-  <title>Layout</title>
-</head>
-<body>
-  <h1>test</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="Assets/styles/css/style.css" />
+    <title>Layout</title>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <p class="hero__intro">Меня зовут Александра Смит</p>
+          <h1 class="hero__title">Я web–разработчик из города Москва</h1>
+          <div class="hero__buttons">
+            <a href="#" class="hero__buttons hero__buttons--primary"
+              >Портфолио</a
+            >
+            <a href="#" class="hero__buttons hero__buttons--secondary"
+              >Про меня</a
+            >
+          </div>
+        </div>        
+      </div>
+      <nav class="hero__socials">
+        <ul class="hero__socials-list">
+          <li><a href="#" class="hero__social-link"
+            ><img
+              src="Assets/images/svg/facebook.svg"
+              alt="facebook"
+              width="20"
+              height="20"
+          /></a></li>
+          
+          <li>
+            <a href="#" class="hero__social-link"
+              ><img
+                src="Assets/images/svg/instagram.svg"
+                alt="instagram"
+                width="20"
+                height="20"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="hero__social-link"
+              ><img
+                src="Assets/images/svg/github.svg"
+                alt="github"
+                width="20"
+                height="20"
+            /></a>
+          </li>
+        </ul>          
+        <span class="hero__socials-label">Социальные сети</span>
+      </nav>
+    </section>
+
+   
+  </body>
 </html>

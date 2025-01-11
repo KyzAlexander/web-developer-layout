@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {    
+  "scripts": {
     "sass": "sass --watch Assets/styles/scss/style.scss Assets/styles/css/style.css"
   },
   "keywords": [],
@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.83.1"
-  }  
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }

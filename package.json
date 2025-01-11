@@ -1,0 +1,15 @@
+{
+  "name": "web-developer-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {    
+    "sass": "sass --watch Assets/styles/scss/style.scss Assets/styles/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.1"
+  }  
+}

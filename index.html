@@ -54,8 +54,63 @@
         </ul>          
         <span class="hero__socials-label">Социальные сети</span>
       </nav>
-    </section>
-
+    </section>      
    
+   
+    
+    <section class="contacts">
+      <div class="contacts__container">
+        <div class="contacts__image">
+          <img src="Assets/images/photo-girl.jpg" alt="Девушка с кофе" />
+        </div>
+        <div class="contacts__content">
+          <p class="contacts__intro">Контакты</p>
+          <h2 class="contacts__title">Свяжитесь со мной</h2>
+          <p class="contacts__subtitle">Любым удобным для вас способом:</p>
+          <div class="contacts__social">
+            <a href="#" class="contacts__social-link contacts__social-link--facebook" aria-label="Facebook">
+              <img
+                src="Assets/images/svg/facebook.svg"
+                alt="github"
+                width="20"
+                height="20"                
+            />
+            </a>            
+            <a href="#" class="contacts__social-link contacts__social-link--telegram" aria-label="Telegram">
+              <img
+                src="Assets/images/svg/telegram.svg"
+                alt="github"
+                width="20"
+                height="20"
+            />
+            </a>
+            <a href="#" class="contacts__social-link contacts__social-link--instagram" aria-label="Instagram">
+              <img
+                src="Assets/images/svg/instagram.svg"
+                alt="github"
+                width="20"
+                height="20"
+            />
+            </a>
+          </div>
+          
+          <form class="contacts__form">
+            <p class="contacts__form-title">Или оставьте ваши данные и я сама вам напишу:</p>
+            <div class="contacts__form-container">
+              <div class="contacts__form-group contacts__form-group--name">
+                <input type="text" id="name" class="contacts__form-input" required />              
+              </div>
+              <div class="contacts__form-group contacts__form-group--email">
+                <input type="email" id="email" class="contacts__form-input" required />              
+              </div>
+            </div>            
+            <div class="contacts__form-group contacts__form-group--message">
+              <textarea id="message" class="contacts__form-input contacts__form-textarea" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="contacts__form-button">Отправить сообщение</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

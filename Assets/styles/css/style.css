@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .hero {
   display: flex;
   justify-content: center;
@@ -100,6 +101,144 @@
   background-color: #000;
   position: absolute;
   left: 100%;
+}
+
+.contacts {
+  padding: 120px 0 92px 0;
+  background-color: #fff;
+}
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1053px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.contacts__image img {
+  max-width: 400px;
+  width: 100%;
+}
+.contacts__content {
+  max-width: 585px;
+  width: 100%;
+}
+.contacts__intro {
+  position: relative;
+  z-index: 3;
+  color: #000;
+  padding-left: 10px;
+  margin-bottom: 6px;
+}
+.contacts__intro::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: #FFA501;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: -1;
+}
+.contacts__title {
+  position: relative;
+  margin-bottom: 20px;
+  color: #000;
+}
+.contacts__title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #FFA501;
+  position: absolute;
+  bottom: -40%;
+  left: 0;
+}
+.contacts__subtitle {
+  margin-bottom: 20px;
+}
+.contacts__social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+.contacts__social-link {
+  width: 20px;
+  height: 20px;
+}
+.contacts__social-link--facebook {
+  transform: rotate(90deg);
+}
+.contacts__form {
+  max-width: 585px;
+  width: 100%;
+}
+.contacts__form-title {
+  margin-bottom: 30px;
+}
+.contacts__form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts__form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+.contacts__form-group::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: #fff;
+  padding: 0 5px;
+  font-size: 12px;
+  color: #000;
+  z-index: 5;
+}
+.contacts__form-group--name {
+  max-width: 280px;
+  width: 100%;
+}
+.contacts__form-group--name::before {
+  content: "Ваше имя";
+}
+.contacts__form-group--email {
+  max-width: 280px;
+  width: 100%;
+}
+.contacts__form-group--email::before {
+  content: "Ваша почта";
+}
+.contacts__form-group--message {
+  max-height: 190px;
+  height: 100%;
+}
+.contacts__form-group--message::before {
+  content: "Ваше сообщение";
+}
+.contacts__form-input {
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid #000;
+  outline: none;
+}
+.contacts__form-input:focus {
+  border-color: #ccc;
+}
+.contacts__form-button {
+  padding: 12px 26px;
+  background-color: #FFA501;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */

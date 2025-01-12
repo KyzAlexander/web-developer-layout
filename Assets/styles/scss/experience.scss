@@ -1,0 +1,139 @@
+.experience {
+  margin-top: 120px;
+  &__container {
+    max-width: 986px;
+    width: 100%;
+    margin: 0 auto;   
+  }
+
+  &__intro {
+    position: relative;
+    z-index: 3;
+    @include poppins-700(16px, 24px);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    &::before {
+      content: "";
+      width: 36px;
+      height: 36px;
+      background-color: #FFA501;
+      border-radius: 50%;
+      position: absolute;      
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    position: relative;    
+    @include poppins-700(36px, 60px);
+    color: #000;
+    margin: 0 0 85px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background-color: #FFA501;      
+      position: absolute;
+      bottom: -30%;          
+    }
+  }
+
+  &__columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;        
+  }
+
+  &__column {
+    max-width: 425px;
+    width: 100%;
+    padding-left: 43px;    
+  }
+
+  &__subtitle {
+    @include poppins-700(20px, 30px);
+    color: #000;
+    margin: 0 0 45px 0;
+  }
+
+  &__timeline {
+    position: relative; 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -25%;
+      left: -10%;
+      bottom: 0;
+      width: 1px;
+      background-color: #000;
+    }  
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: -11.6%;
+      top: -26%;
+      width: 15px;
+      height: 15px;
+      background-color: #FFA501;
+      border-radius: 50%;      
+    }
+  }
+
+  &__item {    
+    max-width: 375px;
+    width: 100%;   
+    &:last-child {
+      margin-top: 45px;
+    }          
+  }
+
+  &__wrapperIcon {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    &::after {
+      content: '';
+      position: absolute;
+      left: -11%;      
+      width: 12%;
+      height: 1px;
+      background-color: #000;
+      z-index: -2;      
+    }
+  }
+  &__wrapperTitle {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &-title {
+      @include poppins-700(14px, 21px);
+      color: #000;
+      margin: 0;
+    }
+    &-subtitle {
+      @include poppins-500(12px, 18px);
+      color: #000;
+      margin: 0;
+    }
+  }
+
+  &__description {
+    @include poppins-500(12px, 18px);
+    color: #000;
+    margin-top: 12px;
+    margin-bottom: 0;
+    max-width: 375px;
+    width: 100%;
+  } 
+}
+

@@ -127,6 +127,153 @@
   left: 100%;
 }
 
+.experience {
+  margin-top: 120px;
+}
+.experience__container {
+  max-width: 986px;
+  width: 100%;
+  margin: 0 auto;
+}
+.experience__intro {
+  position: relative;
+  z-index: 3;
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.experience__intro::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: #FFA501;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+.experience__title {
+  position: relative;
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 60px;
+  color: #000;
+  margin: 0 0 85px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.experience__title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #FFA501;
+  position: absolute;
+  bottom: -30%;
+}
+.experience__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.experience__column {
+  max-width: 425px;
+  width: 100%;
+  padding-left: 43px;
+}
+.experience__subtitle {
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  margin: 0 0 45px 0;
+}
+.experience__timeline {
+  position: relative;
+}
+.experience__timeline::before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  left: -10%;
+  bottom: 0;
+  width: 1px;
+  background-color: #000;
+}
+.experience__timeline::after {
+  content: "";
+  position: absolute;
+  left: -11.6%;
+  top: -26%;
+  width: 15px;
+  height: 15px;
+  background-color: #FFA501;
+  border-radius: 50%;
+}
+.experience__item {
+  max-width: 375px;
+  width: 100%;
+}
+.experience__item:last-child {
+  margin-top: 45px;
+}
+.experience__wrapperIcon {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.experience__wrapperIcon::after {
+  content: "";
+  position: absolute;
+  left: -11%;
+  width: 12%;
+  height: 1px;
+  background-color: #000;
+  z-index: -2;
+}
+.experience__wrapperTitle {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.experience__wrapperTitle-title {
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
+  margin: 0;
+}
+.experience__wrapperTitle-subtitle {
+  font-family: "Poppins Medium", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+  margin: 0;
+}
+.experience__description {
+  font-family: "Poppins Medium", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+  margin-top: 12px;
+  margin-bottom: 0;
+  max-width: 375px;
+  width: 100%;
+}
+
 .contacts {
   padding: 120px 0 92px 0;
   background-color: #fff;

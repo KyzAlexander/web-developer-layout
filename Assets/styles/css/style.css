@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Poppins Medium";
+  src: url("../../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("../../fonts/Poppins-Bold.ttf");
+}
 .hero {
   display: flex;
   justify-content: center;
@@ -23,7 +31,11 @@
 .hero__intro {
   position: relative;
   z-index: 3;
-  color: #000000;
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
   padding-left: 10px;
   margin-bottom: 9px;
 }
@@ -42,7 +54,12 @@
 .hero__title {
   max-width: 532px;
   width: 100%;
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000;
 }
 .hero__buttons {
   display: flex;
@@ -53,6 +70,10 @@
 .hero__buttons > a {
   padding: 12px 26px;
   text-decoration: none;
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
   color: #000000;
 }
 .hero__buttons--primary {
@@ -87,9 +108,12 @@
 }
 .hero__socials-label {
   transform: rotate(-90deg);
-  font-size: 14px;
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
   color: #000;
-  margin-top: 130px;
+  margin-top: 140px;
   display: flex;
   align-items: center;
 }
@@ -127,6 +151,10 @@
 .contacts__intro {
   position: relative;
   z-index: 3;
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
   color: #000;
   padding-left: 10px;
   margin-bottom: 6px;
@@ -145,8 +173,12 @@
 }
 .contacts__title {
   position: relative;
-  margin-bottom: 20px;
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 60px;
   color: #000;
+  margin: 0;
 }
 .contacts__title::after {
   content: "";
@@ -154,11 +186,16 @@
   height: 3px;
   background-color: #FFA501;
   position: absolute;
-  bottom: -40%;
+  bottom: 5%;
   left: 0;
 }
 .contacts__subtitle {
   margin-bottom: 20px;
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
 }
 .contacts__social {
   display: flex;
@@ -180,6 +217,11 @@
 }
 .contacts__form-title {
   margin-bottom: 30px;
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
 }
 .contacts__form-container {
   display: flex;
@@ -198,7 +240,10 @@
   left: 10px;
   background: #fff;
   padding: 0 5px;
+  font-family: "Poppins Medium", sans-serif;
+  font-weight: 500;
   font-size: 12px;
+  line-height: 18px;
   color: #000;
   z-index: 5;
 }
@@ -224,17 +269,32 @@
   content: "Ваше сообщение";
 }
 .contacts__form-input {
+  max-width: 280px;
   width: 100%;
+  box-sizing: border-box;
   padding: 14px 20px;
   border: 1px solid #000;
   outline: none;
+  font-family: "Poppins Medium", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
 }
 .contacts__form-input:focus {
   border-color: #ccc;
 }
+.contacts__form-textarea {
+  max-width: 585px;
+}
 .contacts__form-button {
+  margin-top: 28px;
   padding: 12px 26px;
   background-color: #FFA501;
+  font-family: "Poppins Bold", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
   color: #000;
   border: none;
   cursor: pointer;

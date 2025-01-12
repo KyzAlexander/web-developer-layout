@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="Assets/styles/css/style.css" />
+
     <title>Layout</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
       <div class="hero__container container">
         <div class="hero__content">
           <p class="hero__intro">Меня зовут Александра Смит</p>
-          <h1 class="hero__title">Я web–разработчик из города Москва</h1>
+          <h1 class="hero__title">Я web-разработчик из города Москва</h1>
           <div class="hero__buttons">
             <a href="#" class="hero__buttons hero__buttons--primary"
               >Портфолио</a
@@ -21,20 +22,28 @@
               >Про меня</a
             >
           </div>
-        </div>        
+        </div>
       </div>
       <nav class="hero__socials">
         <ul class="hero__socials-list">
-          <li><a href="#" class="hero__social-link"
-            ><img
-              src="Assets/images/svg/facebook.svg"
-              alt="facebook"
-              width="20"
-              height="20"
-          /></a></li>
-          
           <li>
-            <a href="#" class="hero__social-link"
+            <a
+              href="https://www.facebook.com/"
+              class="hero__social-link"
+              target="_blank"
+              ><img
+                src="Assets/images/svg/facebook.svg"
+                alt="facebook"
+                width="20"
+                height="20"
+            /></a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              class="hero__social-link"
+              target="_blank"
               ><img
                 src="Assets/images/svg/instagram.svg"
                 alt="instagram"
@@ -43,7 +52,10 @@
             /></a>
           </li>
           <li>
-            <a href="#" class="hero__social-link"
+            <a
+              href="https://github.com/"
+              class="hero__social-link"
+              target="_blank"
               ><img
                 src="Assets/images/svg/github.svg"
                 alt="github"
@@ -51,13 +63,11 @@
                 height="20"
             /></a>
           </li>
-        </ul>          
+        </ul>
         <span class="hero__socials-label">Социальные сети</span>
       </nav>
-    </section>      
-   
-   
-    
+    </section>
+
     <section class="contacts">
       <div class="contacts__container">
         <div class="contacts__image">
@@ -68,46 +78,80 @@
           <h2 class="contacts__title">Свяжитесь со мной</h2>
           <p class="contacts__subtitle">Любым удобным для вас способом:</p>
           <div class="contacts__social">
-            <a href="#" class="contacts__social-link contacts__social-link--facebook" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/"
+              class="contacts__social-link contacts__social-link--facebook"
+              aria-label="Facebook"
+              target="_blank"
+            >
               <img
                 src="Assets/images/svg/facebook.svg"
                 alt="github"
                 width="20"
-                height="20"                
-            />
-            </a>            
-            <a href="#" class="contacts__social-link contacts__social-link--telegram" aria-label="Telegram">
+                height="20"
+              />
+            </a>
+            <a
+              href="https://web.telegram.org/k/"
+              class="contacts__social-link contacts__social-link--telegram"
+              aria-label="Telegram"
+              target="_blank"
+            >
               <img
                 src="Assets/images/svg/telegram.svg"
                 alt="github"
                 width="20"
                 height="20"
-            />
+              />
             </a>
-            <a href="#" class="contacts__social-link contacts__social-link--instagram" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/"
+              class="contacts__social-link contacts__social-link--instagram"
+              aria-label="Instagram"
+              target="_blank"
+            >
               <img
                 src="Assets/images/svg/instagram.svg"
                 alt="github"
                 width="20"
                 height="20"
-            />
+              />
             </a>
           </div>
-          
+
           <form class="contacts__form">
-            <p class="contacts__form-title">Или оставьте ваши данные и я сама вам напишу:</p>
+            <p class="contacts__form-title">
+              Или оставьте ваши данные и я сама вам напишу:
+            </p>
             <div class="contacts__form-container">
               <div class="contacts__form-group contacts__form-group--name">
-                <input type="text" id="name" class="contacts__form-input" required />              
+                <input
+                  type="text"
+                  id="name"
+                  class="contacts__form-input"
+                  required
+                />
               </div>
               <div class="contacts__form-group contacts__form-group--email">
-                <input type="email" id="email" class="contacts__form-input" required />              
+                <input
+                  type="email"
+                  id="email"
+                  class="contacts__form-input"
+                  required
+                />
               </div>
-            </div>            
-            <div class="contacts__form-group contacts__form-group--message">
-              <textarea id="message" class="contacts__form-input contacts__form-textarea" rows="5" required></textarea>
             </div>
-            <button type="submit" class="contacts__form-button">Отправить сообщение</button>
+            <div class="contacts__form-group contacts__form-group--message">
+              <textarea
+                id="message"
+                class="contacts__form-input contacts__form-textarea"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="contacts__form-button">
+              Отправить сообщение
+            </button>
           </form>
         </div>
       </div>

@@ -11,6 +11,69 @@
     <!-- hero section -->
     <section class="hero">
       <div class="hero__container container">
+        <button class="hero__burger">
+          <span class="hero__burger-line"></span>
+          <span class="hero__burger-line"></span>
+          <span class="hero__burger-line"></span>
+        </button>
+        <nav class="hero__menu"> 
+          <button class="hero__menu-cross">
+            <span class="hero__menu-cross--line"></span>
+            <span class="hero__menu-cross--line"></span>
+          </button>        
+          <ul class="hero__menu-list">
+            <li class="hero__menu-item">
+              <a href="#" class="hero__menu-link">Про меня</a>
+            </li>
+            <li class="hero__menu-item">
+              <a href="#" class="hero__menu-link">Мой опыт</a>
+            </li>
+            <li class="hero__menu-item">
+              <a href="#" class="hero__menu-link">Мои навыки</a>
+            </li>
+            <li class="hero__menu-item">
+              <a href="#" class="hero__menu-link">Мои работы</a>
+            </li>
+            <li class="hero__menu-item">
+              <a href="#" class="hero__menu-link">Прайс-лист</a>
+            </li>
+            <li class="hero__menu-item">
+              <a href="#" class="hero__menu-link">Контакты</a>
+            </li>
+          </ul>
+          <div class="hero__menu-socials">
+            <a
+              href="https://github.com/"
+              class="hero__menu-socials-icon"
+              target="_blank"
+              ><img
+                src="Assets/images/svg/github.svg"
+                alt="github"
+                width="20"
+                height="20"
+            /></a>
+            <a
+              href="https://www.instagram.com/"
+              class="hero__menu-socials-icon"
+              target="_blank"
+              ><img
+                src="Assets/images/svg/instagram.svg"
+                alt="instagram"
+                width="20"
+                height="20"
+            /></a>
+            <a
+              href="https://www.facebook.com/"
+              class="hero__menu-socials-icon"
+              target="_blank"
+              ><img
+                src="Assets/images/svg/facebook.svg"
+                alt="facebook"
+                width="20"
+                height="20"
+            /></a>
+          </div>
+        </nav>
         <div class="hero__content">
           <p class="hero__intro">Меня зовут Александра Смит</p>
           <h1 class="hero__title">Я web-разработчик из города Москва</h1>
@@ -66,6 +129,7 @@
         </ul>
         <span class="hero__socials-label">Социальные сети</span>
       </nav>
+      <div class="hero__overlay"></div>
     </section>  
       
     <!-- experience section  -->
@@ -218,5 +282,7 @@
         </div>
       </div>
     </section>
+
+    <script src="./Assets/js/index.js"></script>
   </body>
 </html>

@@ -8,12 +8,17 @@
     align-items: flex-start;
     max-width: 1053px;
     width: 100%;
-    height: 100%;
-    // padding: 0 35px 0 52px;
+    height: 100%;    
     margin: 0 auto;
+    @media (max-width: 320px) {
+      padding: 0 10px;
+    }
   }
 
   &__image {
+    @media (max-width: 320px) {
+      display: none;
+    }
     img {
       max-width: 400px;
       width: 100%;      
@@ -60,6 +65,10 @@
       bottom: 5%;      
       left: 0;      
     }
+    @media (max-width: 320px) {
+      @include poppins-700(24px, 36px);
+      margin-top: 25px;
+    }
   }
 
   &__subtitle {    
@@ -87,6 +96,10 @@
   &__form {
     max-width: 585px;
     width: 100%;
+    @media (max-width: 320px) {
+      display: flex;
+      flex-direction: column;
+    }    
     &-title {
       margin-bottom: 30px;
       @include poppins-700(14px, 21px);
@@ -97,6 +110,10 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      @media (max-width: 320px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
     &-group {
       margin-bottom: 15px;
@@ -118,6 +135,9 @@
         &::before {
           content: 'Ваше имя';        
         }
+        @media (max-width: 320px) {
+          max-width: 300px;
+        }
       }
       &--email {
         max-width: 280px;
@@ -125,12 +145,18 @@
         &::before {
           content: 'Ваша почта';        
         }
+        @media (max-width: 320px) {
+          max-width: 300px;
+        }
       }
       &--message {
         max-height: 190px;
         height: 100%;
         &::before {
           content: 'Ваше сообщение';        
+        }
+        @media (max-width: 320px) {
+          max-width: 300px;
         }
       }
     }    
@@ -146,13 +172,17 @@
       color: #000;    
       &:focus {
         border-color: #ccc;
-      }      
+      } 
+      @media (max-width: 320px) {
+        max-width: 300px;
+      }     
     }
     &-textarea {
-      max-width: 585px;      
-    } 
-  
-    
+      max-width: 585px;
+      @media (max-width: 320px) {
+        max-width: 300px;
+      }      
+    }   
 
     &-button {    
       margin-top: 28px;  
@@ -162,7 +192,10 @@
       color: #000;      
       border: none;      
       cursor: pointer;      
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);      
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      @media (max-width: 320px) {
+        margin: 28px auto 0 auto;        
+      }      
     }
   }
 }

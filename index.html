@@ -293,7 +293,7 @@
             </a>
           </div>
 
-          <form class="contacts__form">
+          <form class="contacts__form" id="contactForm" novalidate>
             <p class="contacts__form-title">
               Или оставьте ваши данные и я сама вам напишу:
             </p>
@@ -305,6 +305,7 @@
                   class="contacts__form-input"
                   required
                 />
+                <span class="contacts__form--errorMessage"></span>
               </div>
               <div class="contacts__form-group contacts__form-group--email">
                 <input
@@ -313,6 +314,7 @@
                   class="contacts__form-input"
                   required
                 />
+                <span class="contacts__form--errorMessage"></span>
               </div>
             </div>
             <div class="contacts__form-group contacts__form-group--message">
@@ -322,6 +324,7 @@
                 rows="5"
                 required
               ></textarea>
+              <span class="contacts__form--errorMessage"></span>
             </div>
             <button type="submit" class="contacts__form-button">
               Отправить сообщение
@@ -331,6 +334,7 @@
       </div>
     </section>
 
-    <script src="./Assets/js/index.js"></script>
+    <script src="./Assets/js/burgerMenu.js"></script>
+    <script src="./Assets/js/formValidation.js"></script>
   </body>
 </html>

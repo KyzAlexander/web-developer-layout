@@ -197,5 +197,14 @@
         margin: 28px auto 0 auto;        
       }      
     }
+    &--errorMessage {      
+      color: red;
+      @include poppins-500(12px, 21px);
+      margin-top: 5px;
+      display: none;      
+    }
+    &--errorMessage.active {
+      display: block;
+    }
   }
 }
